@@ -199,61 +199,117 @@
 
   <!-- CONTACT -->
   <section class="contact" id="contact">
-    <div class="section-label">Get in Touch</div>
-    <h2 class="section-title">Send an Inquiry</h2>
-    <div class="contact-layout">
-      <div class="contact-form">
-        <div class="form-row">
-          <div class="field">
-            <label>First Name *</label>
-            <input type="text" placeholder="Your first name" />
-          </div>
-          <div class="field">
-            <label>Last Name *</label>
-            <input type="text" placeholder="Your last name" />
-          </div>
-        </div>
+  <div class="section-label">Get in Touch</div>
+  <h2 class="section-title">Send an Inquiry</h2>
+
+  <div class="contact-layout">
+
+    <form class="contact-form"
+          action="https://api.web3forms.com/submit"
+          method="POST">
+
+      <input type="hidden"
+             name="access_key"
+             value="73bdf663-a903-480d-b3a4-035e4a95b7c6">
+
+      <div class="form-row">
         <div class="field">
-          <label>Technical Contact Email *</label>
-          <input type="email" placeholder="your@email.com" />
+          <label>First Name *</label>
+          <input type="text"
+                 name="first_name"
+                 placeholder="Your first name"
+                 required />
         </div>
+
         <div class="field">
-          <label>Direct Line</label>
-          <input type="tel" placeholder="+91 00000 00000" />
-        </div>
-        <div class="field">
-          <label>Inquiry Specifications *</label>
-          <textarea placeholder="Provide technical details or project requirements..."></textarea>
-        </div>
-        <button class="btn-send">Send Inquiry →</button>
-      </div>
-      <div class="contact-info">
-        <div>
-          <div class="info-label">Managing Director</div>
-          <div class="info-value">G. Arivazhagan</div>
-        </div>
-        <div>
-          <div class="info-label">Location</div>
-          <div class="info-value">No.24/4 P No.16, Anumepalli (Village),<br />SIPCOT – Hosur, 635 126, India</div>
-        </div>
-        <div>
-          <div class="info-label">Email</div>
-          <div class="info-value"><a href="mailto:alliedtechnology2@gmail.com">alliedtechnology2@gmail.com</a></div>
-        </div> 
-        <div>
-          <div class="info-label">Mobile</div>
-          <div class="info-value"><a href="tel:+919043000021">+91 9043000021</a></div>
-        </div>
-        <div>
-          <div class="info-label">GST</div>
-          <div class="info-value">33BOSPH2607K1ZT</div>
-        </div>
-        <div class="contact-map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3891.0197419136925!2d77.7970819!3d12.777229799999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae71004993f975%3A0xf450ef5b1606be15!2sALLIED%20TECHNOLOGY!5e0!3m2!1sen!2sin!4v1781873845645!5m2!1sen!2sin" width="50%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <label>Last Name *</label>
+          <input type="text"
+                 name="last_name"
+                 placeholder="Your last name"
+                 required />
         </div>
       </div>
+
+      <div class="field">
+        <label>Technical Contact Email *</label>
+        <input type="email"
+               name="email"
+               placeholder="your@email.com"
+               required />
+      </div>
+
+      <div class="field">
+        <label>Direct Line</label>
+        <input type="tel"
+               name="phone"
+               placeholder="+91 00000 00000" />
+      </div>
+
+      <div class="field">
+        <label>Inquiry Specifications *</label>
+        <textarea name="message"
+                  placeholder="Provide technical details or project requirements..."
+                  required></textarea>
+      </div>
+
+      <button type="submit" class="btn-send">
+        Send Inquiry →
+      </button>
+
+    </form>
+
+    <div class="contact-info">
+      <div>
+        <div class="info-label">Managing Director</div>
+        <div class="info-value">G. Arivazhagan</div>
+      </div>
+
+      <div>
+        <div class="info-label">Location</div>
+        <div class="info-value">
+          No.24/4 P No.16, Anumepalli (Village),<br />
+          SIPCOT – Hosur, 635 126, India
+        </div>
+      </div>
+
+      <div>
+        <div class="info-label">Email</div>
+        <div class="info-value">
+          <a href="mailto:alliedtechnology2@gmail.com">
+            alliedtechnology2@gmail.com
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <div class="info-label">Mobile</div>
+        <div class="info-value">
+          <a href="tel:+919043000021">
+            +91 9043000021
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <div class="info-label">GST</div>
+        <div class="info-value">33BOSPH2607K1ZT</div>
+      </div>
+
+      <div class="contact-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3891.0197419136925!2d77.7970819!3d12.777229799999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae71004993f975%3A0xf450ef5b1606be15!2sALLIED%20TECHNOLOGY!5e0!3m2!1sen!2sin!4v1781873845645!5m2!1sen!2sin"
+          width="50%"
+          height="300"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- FOOTER -->
   <footer>
