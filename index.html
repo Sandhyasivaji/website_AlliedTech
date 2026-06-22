@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home | Allied Technology</title>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- CURSOR HOVER IMAGE -->
+  <div class="service-hover-img" id="hoverImg">
+    <img id="hoverImgEl" src="" alt="" />
+    <div class="img-label" id="hoverImgLabel"></div>
+  </div>
+
+  <!-- SERVICE DETAIL OVERLAY -->
+  <div class="service-overlay" id="serviceOverlay" role="dialog" aria-modal="true">
+    <div class="overlay-inner">
+      <div class="overlay-topbar">
+        <div class="overlay-topbar-left">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg==" alt="Logo" />
+          <div cl ass="overlay-topbar-svc" id="overlayTopSvc"></div>
+        </div>
+        <button class="overlay-close-btn" id="overlayCloseBtn">✕</button>
+      </div>
+
+      <div class="overlay-split">
+        <div class="overlay-photo">
+          <img id="overlayPhotoImg" src="" alt="" />
+          <div class="overlay-num-bg" id="overlayNumBg"></div>
+        </div>
+        <div class="overlay-info">
+          <div class="overlay-eyebrow">Service Details</div>
+          <h3 class="overlay-title" id="overlayTitle"></h3>
+          <p class="overlay-desc" id="overlayDesc"></p>
+          <div class="overlay-feats" id="overlayFeats"></div>
+          <button class="overlay-back-btn" id="overlayBackBtn">← Back to Services</button>
+        </div>
+      </div>
+
+      <div class="overlay-gallery-section">
+        <h4 class="overlay-gallery-heading">Gallery</h4>
+        <div class="gallery-grid" id="overlayGallery"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="#" class="logo">
+      <img src="logo-sample.png" alt="Company Logo" class="logo-img" />
+         <div class="logo-text">
+           Allied<br />
+           <span>Technology</span>
+        </div>
+    </a>
+    <ul>
+      <li><a href="#vision">Vision</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#customers">Customers</a></li>
+      <li><a href="#contact" class="btn-contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-img">
+      <img src="hero.png" alt="CNC Milling Machine at Allied Technology" />
+    </div>
+    <div class="hero-content">
+      <div class="hero-eyebrow">Welcome to</div>
+      <h1 class="hero-title">Allied<br />Technology</h1>
+      <p class="hero-sub">Precision CNC manufacturing for the most demanding industrial standards — micron-level accuracy, every time.</p>
+      <a href="#services" class="hero-cta">Explore Services →</a>
+    </div>
+  </section>
+
+  <!-- TICKER -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-inner">
+      <span>Press Tools</span><span>CNC Milling</span><span>Moulds</span><span>Jigs & Fixtures</span><span>Tool & Dies</span><span>Injection Moulding</span><span>Die Casting</span><span>Die Spares</span><span>Precision Manufacturing</span><span>Batliboi Chetak 100MC</span>
+      <span>Press Tools</span><span>CNC Milling</span><span>Moulds</span><span>Jigs & Fixtures</span><span>Tool & Dies</span><span>Injection Moulding</span><span>Die Casting</span><span>Die Spares</span><span>Precision Manufacturing</span><span>Batliboi Chetak 100MC</span>
+    </div>
+  </div>
+
+  <!-- VISION -->
+  <section class="vision" id="vision">
+    <div class="section-label">Quality Policy</div>
+    <h2 class="section-title">Our Vision</h2>
+    <div class="vision-grid">
+      <div class="vision-card">
+        <div class="vision-card-title">Reliability</div>
+        <p>Providing consistent, high-quality manufacturing solutions that meet the most demanding industrial standards.</p>
+      </div>
+      <div class="vision-card">
+        <div class="vision-card-title">Precision</div>
+        <p>Utilizing advanced CNC milling technology to deliver components with micron-level accuracy and repeatability.</p>
+      </div>
+      <div class="vision-card">
+        <div class="vision-card-title">Customer Delight</div>
+        <p>Ensuring customer satisfaction through timely delivery and continuous improvement of our service quality.</p>
+      </div>
+      <div class="vision-card">
+        <div class="vision-card-title">Innovation</div>
+        <p>Empowering our team with the latest technology and motivation to drive innovation in tooling and production.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MANUFACTURING SERVICES -->
+  <section class="services" id="services">
+    <div class="section-label">What We Do</div>
+    <h2 class="section-title">Manufacturing Services</h2>
+    <p class="services-intro">Committed to excellence across our entire manufacturing process. Click any service below to explore capabilities, features, and imagery.</p>
+    <div class="services-list" id="servicesList"></div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects" id="projects">
+    <div class="section-label">Projects & Infrastructure</div>
+    <h2 class="section-title">Our Capabilities</h2>
+    <p class="projects-desc">A showcase of our high-precision manufacturing capabilities and the industrial infrastructure that powers our operations.</p>
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="hero.png" alt="CNC Milling" />
+        <div class="project-card-label">CNC Milling · Batliboi Chetak 100MC</div>
+      </div>
+      <div class="project-card">
+        <img src="PC.png" alt="Precision Components" />
+        <div class="project-card-label">Precision Components</div>
+      </div>
+      <div class="project-card">
+        <img src="Certificate.png" alt="Certification" />
+        <div class="project-card-label">Certification</div>
+      </div>
+      <div class="project-card">
+        <img src="TD1.png" alt="Tool Works" class="td-slider-img" />
+        <div class="project-card-label">Tool & Die Works</div>
+        <div class="slider-controls">
+          <button class="slider-btn prev" onclick="slideTD(-1)">‹</button>
+          <div class="slider-counter"><span id="td-current-slide">1</span>/<span id="td-total-slides">6</span></div>
+          <button class="slider-btn next" onclick="slideTD(1)">›</button>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="WF-1.jpeg" alt="Workshop Floor" class="workshop-slider-img" />
+        <div class="project-card-label">Workshop Floor</div>
+        <div class="slider-controls">
+          <button class="slider-btn prev" onclick="slideWorkshop(-1)">‹</button>
+          <div class="slider-counter"><span id="current-slide">1</span>/<span id="total-slides">3</span></div>
+          <button class="slider-btn next" onclick="slideWorkshop(1)">›</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CUSTOMERS -->
+  <section class="customers" id="customers">
+  <div class="section-label">Trusted Partners</div>
+  <h2 class="section-title">Our Valued Customers</h2>
+  <p class="customers-desc">Trusted by industrial leaders to deliver precision components and high-performance tooling solutions.</p>
+  <div class="customers-grid">
+     <div class="customer-card">
+      <img src="customer logos/VST.jpg" alt="VST Tillers Tractors" class="customer-logo" />
+      <div class="customer-name">VST Tillers Tractors</div>
+    </div>
+    <div class="customer-card">
+      <div class="customer-icon">IS</div>
+      <div class="customer-name">Smart Tech Aerospace</div>
+    </div>
+    <div class="customer-card">
+      <img src="customer logos/VA.png" alt="Vertex Auto" class="customer-logo" />
+      <div class="customer-name">Vertex Auto Components</div>
+    </div>
+    <div class="customer-card">
+      <img src="customer logos/MK.png" alt="EMMKAY" class="customer-logo" />
+      <div class="customer-name">EMMKAY TOOLS</div>
+    </div>
+    <div class="customer-card">
+      <img src="customer logos/RV.png" alt="Retikare" class="customer-logo" />
+      <div class="customer-name">Retikare For Vision</div>
+    </div>
+    <div class="customer-card">
+      <div class="customer-icon">EC</div>
+      <div class="customer-name">Elite CNC Works</div>
+    </div>
+    <div class="customer-card">
+      <div class="customer-icon">IM</div>
+      <div class="customer-name">Icon Medicare</div>
+    </div>
+    <div class="customer-card">
+      <img src="customer logos/AM.png" alt="ARYABHATTA MOTORS" class="customer-logo" />
+      <div class="customer-name">ARYABHATTA MOTORS</div>
+    </div>
+  </div>
+</section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="section-label">Get in Touch</div>
+    <h2 class="section-title">Send an Inquiry</h2>
+    <div class="contact-layout">
+      <div class="contact-form">
+        <div class="form-row">
+          <div class="field">
+            <label>First Name *</label>
+            <input type="text" placeholder="Your first name" />
+          </div>
+          <div class="field">
+            <label>Last Name *</label>
+            <input type="text" placeholder="Your last name" />
+          </div>
+        </div>
+        <div class="field">
+          <label>Technical Contact Email *</label>
+          <input type="email" placeholder="your@email.com" />
+        </div>
+        <div class="field">
+          <label>Direct Line</label>
+          <input type="tel" placeholder="+91 00000 00000" />
+        </div>
+        <div class="field">
+          <label>Inquiry Specifications *</label>
+          <textarea placeholder="Provide technical details or project requirements..."></textarea>
+        </div>
+        <button class="btn-send">Send Inquiry →</button>
+      </div>
+      <div class="contact-info">
+        <div>
+          <div class="info-label">Managing Director</div>
+          <div class="info-value">G. Arivazhagan</div>
+        </div>
+        <div>
+          <div class="info-label">Location</div>
+          <div class="info-value">No.24/4 P No.16, Anumepalli (Village),<br />SIPCOT – Hosur, 635 126, India</div>
+        </div>
+        <div>
+          <div class="info-label">Email</div>
+          <div class="info-value"><a href="mailto:alliedtechnology2@gmail.com">alliedtechnology2@gmail.com</a></div>
+        </div> 
+        <div>
+          <div class="info-label">Mobile</div>
+          <div class="info-value"><a href="tel:+919043000021">+91 9043000021</a></div>
+        </div>
+        <div>
+          <div class="info-label">GST</div>
+          <div class="info-value">33BOSPH2607K1ZT</div>
+        </div>
+        <div class="contact-map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3891.0197419136925!2d77.7970819!3d12.777229799999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae71004993f975%3A0xf450ef5b1606be15!2sALLIED%20TECHNOLOGY!5e0!3m2!1sen!2sin!4v1781873845645!5m2!1sen!2sin" width="50%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-left">
+      <div>
+        <div class="footer-logo">Allied <span>Tech</span></div>
+        <div class="footer-gst">GST: 33BOSPH2607K1ZT · Hosur, India</div>
+      </div>
+    </div>
+    <div class="footer-tags">Precision Work · CNC Milling · Tool & Dies · Die Spares · Jigs and Fixtures · Industrial Tooling</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
