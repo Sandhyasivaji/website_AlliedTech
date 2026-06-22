@@ -103,17 +103,17 @@ const SERVICES = [
     num: '07',
     title: 'Injection Moulding',
     desc: 'We deliver high-precision plastic components through advanced injection moulding, ensuring consistent quality across high volumes. Our capabilities cover engineering plastics for automotive, industrial, and medical-grade applications.',
-    img: 'Injection moulding/IM-0.png',
+    img: 'Injection Moulding/IM-0.png',
     feats: [
       { t: 'Engineering Plastics', d: 'PA, POM, ABS, PC and glass-filled grades for demanding applications.' },
       { t: 'High-Volume Output', d: 'Automated production lines maintaining ±0.05 mm dimensional consistency.' },
       { t: 'Insert Moulding', d: 'Metal inserts encapsulated in plastic for hybrid structural components.' }
     ],
     gallery: [
-      'Injection moulding/IM-1.png',
-      'Injection moulding/IM-2.png',
-      'Injection moulding/IM-3.png',
-      'Injection moulding/IM-4.png'
+      'Injection Moulding/IM-1.png',
+      'Injection Moulding/IM-2.png',
+      'Injection Moulding/IM-3.png',
+      'Injection Moulding/IM-4.png'
     ]
   },
   {
